@@ -9,13 +9,17 @@ typing on macOS.
 brew install --cask alfital2/tap/flickey
 ```
 
-That one command taps this repo and installs the app. The fully qualified name
-is only needed the first time; once the tap is added, plain `flickey` works
-everywhere:
+That one command taps this repo and installs the app. Naming the cask in full
+is also what satisfies the third-party tap trust check added in Homebrew 6, so
+prefer it for a first install.
+
+After that, plain `flickey` works everywhere - `brew info --cask flickey`,
+`brew upgrade --cask flickey`, and so on. To get the short name without
+installing first:
 
 ```sh
 brew tap alfital2/tap
-brew install --cask flickey
+brew trust alfital2/tap
 ```
 
 To uninstall:
