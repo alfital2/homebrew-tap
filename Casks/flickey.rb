@@ -10,7 +10,11 @@ cask "flickey" do
 
   livecheck do
     url "https://flickey.site/appcast.xml"
-    strategy :sparkle
+    # The appcast carries both the marketing and the build number; the cask is
+    # versioned off the git tag, which is the marketing version alone.
+    strategy :sparkle do |item|
+      item.short_version
+    end
   end
 
   auto_updates true
