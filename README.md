@@ -39,7 +39,7 @@ Homebrew do it, run `brew upgrade --cask --greedy flickey`.
 
 `Casks/flickey.rb` is bumped automatically by
 [`.github/workflows/autobump.yml`](.github/workflows/autobump.yml), which checks
-`alfital2/FlicKey` for a newer published release every six hours, verifies the
+`alfital2/FlicKey` for a newer published release every hour, verifies the
 DMG's SHA-256, and commits the change. Nothing here needs a manual edit on
 release day.
 

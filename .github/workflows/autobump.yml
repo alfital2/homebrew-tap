@@ -5,7 +5,7 @@ name: Auto-bump cask
 # the FlicKey release script can also fire it instantly via workflow_dispatch.
 on:
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "17 * * * *"
   workflow_dispatch:
 
 permissions:
