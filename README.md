@@ -6,10 +6,19 @@ typing on macOS.
 ## Install
 
 ```sh
-brew install --cask alfital2/flickey/flickey
+brew install --cask alfital2/tap/flickey
 ```
 
-That one command taps this repo and installs the app. To uninstall:
+That one command taps this repo and installs the app. The fully qualified name
+is only needed the first time; once the tap is added, plain `flickey` works
+everywhere:
+
+```sh
+brew tap alfital2/tap
+brew install --cask flickey
+```
+
+To uninstall:
 
 ```sh
 brew uninstall --cask flickey          # remove the app
@@ -40,5 +49,5 @@ Two things to keep in mind:
 To bump immediately instead of waiting for the schedule:
 
 ```sh
-gh workflow run autobump.yml --repo alfital2/homebrew-flickey
+gh workflow run autobump.yml --repo alfital2/homebrew-tap
 ```
