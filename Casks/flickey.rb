@@ -2,8 +2,7 @@ cask "flickey" do
   version "0.5.5"
   sha256 "4a028698d7f86687a0be90392866234aa0a5e8479d56560d797dc142d87835e0"
 
-  url "https://github.com/alfital2/FlicKey/releases/download/v#{version}/FlicKey.dmg",
-      verified: "github.com/alfital2/FlicKey/"
+  url "https://github.com/alfital2/FlicKey/releases/download/v#{version}/FlicKey.dmg"
   name "FlicKey"
   desc "Fixes wrong-keyboard-layout typing by converting and switching the layout"
   homepage "https://flickey.site/"
