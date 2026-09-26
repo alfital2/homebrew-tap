@@ -1,6 +1,6 @@
 cask "flickey" do
-  version "0.5.6"
-  sha256 "fae4fd98b5b512075f4c4832914db61859ff91c121b62cd18cf78f862be76d69"
+  version "0.6.0"
+  sha256 "339ca861650eb0e5bf160f91c3fe3dd1b7fcd8dc6c12fdaf8e5048810c429317"
 
   url "https://github.com/alfital2/FlicKey/releases/download/v#{version}/FlicKey.dmg"
   name "FlicKey"
